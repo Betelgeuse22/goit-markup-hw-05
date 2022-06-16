@@ -110,16 +110,16 @@ button {
   display: block;
   border-radius: 4px;
   padding: 6px 22px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
-}
 
-.filter-btn:hover,
-.filter-btn:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -186,6 +186,8 @@ button {
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link {
@@ -193,13 +195,6 @@ button {
 }
 .auth-nav .link {
   color: var(--primary-text-color);
-}
-
-.svg-mail:focus,
-.svg-mail:hover,
-.svg-tel:focus,
-.svg-tel:hover {
-  fill: var(--accent-color);
 }
 
 .site-nav .link.current {
@@ -221,6 +216,8 @@ button {
   align-items: center;
   justify-content: center;
   color: var(--accent-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address .link:hover,
@@ -242,6 +239,8 @@ button {
   line-height: 1.2;
   color: var(--accent-color);
   margin-right: 93px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer .logo:focus,
@@ -251,6 +250,8 @@ footer .logo:hover {
 footer .logo::after {
   content: 'Studio';
   color: var(--secondary-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer .logo:focus::after,
@@ -261,6 +262,8 @@ footer .logo:hover::after {
 header .logo::after {
   content: 'Studio';
   color: var(--title-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 header .logo:focus,
 header .logo:hover {
@@ -481,6 +484,9 @@ header .logo:hover::after {
   height: 100%;
   border-radius: 50%;
   color: #afb1b8;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-link:hover,
@@ -517,10 +523,10 @@ header .logo:hover::after {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-
-.client-link {
   fill: currentColor;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-client {
@@ -603,14 +609,13 @@ header .logo:hover::after {
 
 .card-filter a:focus,
 .card-filter a:hover {
-  transition: 250ms;
-  cubic-bezier: (0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .filter-thumb {
   position: relative;
+  overflow: hidden;
 }
 
 .filter-thumb::before {
@@ -623,6 +628,8 @@ header .logo:hover::after {
   left: 0;
   background: rgba(33, 150, 243, 0.9);
 
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
   opacity: 0;
 }
 
@@ -630,8 +637,8 @@ header .logo:hover::after {
 .card-filter a:focus .filtert-description,
 .card-filter a:hover .filter-thumb::before,
 .card-filter a:hover .filtert-description {
-  transition: 250ms;
   opacity: 1;
+  transform: translateY(0);
 }
 
 .filtert-description {
@@ -647,6 +654,8 @@ header .logo:hover::after {
   color: var(--secondary-text-color);
 
   opacity: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
 }
 
 /*------------------FOOTER------------------*/
@@ -713,6 +722,8 @@ header .logo:hover::after {
   height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-link:hover,
